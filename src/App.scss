@@ -1,0 +1,72 @@
+.hero{
+  display: flex;
+  padding: 50px;
+  gap: 50px;  
+  position: relative;
+  min-height: 60vh;
+  justify-content: center;
+  align-items: center;
+
+  > img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .left, .right{
+    flex: 1;
+  }
+
+  .left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    .search-bar{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 60%;
+      background-color: white;
+      border-radius: 30px;
+      padding: 5px 15px;
+
+      .find{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+
+
+        img{
+          width: 15px;
+        }
+
+        input{
+          height: 25px;
+          border: none;
+          width: 85%;
+
+
+          &:focus-visible{
+            outline: none;
+          }
+        }
+      }
+      .btn-primary{
+        height: 35px;
+      }
+    }
+  }
+
+  .right{
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

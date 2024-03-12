@@ -1,3 +1,11 @@
+:root{
+
+  /* COLOR VARIABLE */
+
+  --main: #FDF8EE;
+  --btn-primary: #4D2C5E;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +18,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.btn-primary{
+  color: white;
+  background-color: var(--btn-primary);
+  padding: 5px 20px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
 }
